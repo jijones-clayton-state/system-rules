@@ -1,5 +1,9 @@
 language: java
 install: mvn install -DskipTests=true -Dgpg.skip=true
+addons:
+  apt:
+    packages:
+      - openjdk-6-jdk
 jdk:
   - oraclejdk7
   - oraclejdk8
